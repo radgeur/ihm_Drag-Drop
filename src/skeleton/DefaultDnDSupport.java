@@ -1,3 +1,5 @@
+package skeleton;
+
 /**
  * @author <a href="mailto:gery.casiez@lifl.fr">Gery Casiez</a>
  */
@@ -25,14 +27,14 @@ public class DefaultDnDSupport {
 		textField.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JTextField"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//textField.setDragEnabled(true);
+		textField.setDragEnabled(true);
 
 		// JPasswordField
 		JPasswordField passwordField = new JPasswordField(10);
 		passwordField.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JPasswordField"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//passwordField.setDragEnabled(true);
+		passwordField.setDragEnabled(true);
 
 		// JFormattedTextField
 		JFormattedTextField ftf = new JFormattedTextField("Universite de Lille 1");
@@ -40,7 +42,7 @@ public class DefaultDnDSupport {
 		ftf.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JFormattedTextField"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//ftf.setDragEnabled(true);
+		ftf.setDragEnabled(true);
 
 		// JTextArea
 		JTextArea jta = new JTextArea("Master 1 informatique");
@@ -48,11 +50,11 @@ public class DefaultDnDSupport {
 		jta.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JTextArea"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//jta.setDragEnabled(true);
+		jta.setDragEnabled(true);
 
 		// JEditorPane
 		JEditorPane editorPane = createEditorPane();
-		//editorPane.setDragEnabled(true);
+		editorPane.setDragEnabled(true);
 		JScrollPane editorScrollPane = new JScrollPane(editorPane);
 		editorScrollPane.setVerticalScrollBarPolicy(
 				JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -62,7 +64,7 @@ public class DefaultDnDSupport {
 
 		// JColorChooser
 		JColorChooser cc = new JColorChooser();
-		//cc.setDragEnabled(true);
+		cc.setDragEnabled(true);
 		cc.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JColorChooser"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
@@ -79,7 +81,7 @@ public class DefaultDnDSupport {
 		jscrollListe.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JList"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//liste.setDragEnabled(true);
+		liste.setDragEnabled(true);
 
 		// JTree
 		DefaultMutableTreeNode m1 =  new DefaultMutableTreeNode("M1");
@@ -108,7 +110,7 @@ public class DefaultDnDSupport {
 		s2.add(new DefaultMutableTreeNode("SVL"));
 		s2.add(new DefaultMutableTreeNode("TI"));
 		JTree tree = new JTree(m1);
-		//tree.setDragEnabled(true);
+		tree.setDragEnabled(true);
 		JScrollPane jscrollTree = new JScrollPane(tree);
 		jscrollTree.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JTree"),
@@ -137,14 +139,14 @@ public class DefaultDnDSupport {
 
 		JTable table = new JTable(data2, columnNames);
 		JScrollPane scrollPaneTable = new JScrollPane(table);
-		//table.setDragEnabled(true);
+		table.setDragEnabled(true);
 
 		// JFileChooser
 		JFileChooser fc = new JFileChooser();
 		fc.setBorder(BorderFactory.createCompoundBorder(
 				BorderFactory.createTitledBorder("JFileChooser"),
 				BorderFactory.createEmptyBorder(5,5,5,5)));
-		//fc.setDragEnabled(true);
+		fc.setDragEnabled(true);
 
 		panelgauche.add(textField);
 		panelgauche.add(passwordField);
