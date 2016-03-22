@@ -30,7 +30,7 @@ public class DragPolice {
 		
 		//Création et ajout des différents éléments au container
 		label = new JLabel("IHM");
-		label.setTransferHandler(new TransferHandler("text"));
+		label.setTransferHandler(new TransfertCouleur());
 		
 		label.addMouseMotionListener(new MouseMotionListener(){
 
